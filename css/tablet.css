@@ -1,0 +1,222 @@
+@import url(common.css);
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width:1024px){
+
+  main{
+    width: 100%;
+  }
+  article>div{
+    margin-left: 0;
+  }
+  
+  /* header */
+  
+  .glass{
+    width: 100vw;
+    margin: auto 0;
+    height: auto;
+  }
+  nav{
+    width: 100%;
+    margin: 0;
+  }
+  .logo{
+    float: left;
+  }
+  header .logo>a{
+    margin: 0;
+  }
+  header .logo>a img{
+    width: 100px;
+    margin-top: 14px;
+    margin-left: 20px;
+  }
+  
+  /* Menu */
+
+  .gnb{
+    display: flex;
+    width: 600px;
+    margin: 0;
+    float: right;
+  }
+  nav .gnb li{
+    padding-left: 20px;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  .sns{display: none;}
+
+
+  .font{
+    width: 100%;
+    height: 400px;
+    margin-top: 70px;
+  }
+  .font>h2{
+    margin-left: 0;
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: -20px;
+  }
+  .font>h3{
+    margin-left: 0px;
+    font-size: 140px;
+    color: #0b8c2700; /* 배경에 맞춰서 색상바꾸기  */
+  }
+  .font>h3>b{
+    margin-left: 0px;
+    -webkit-text-stroke-color: #fff; /* 배경에 맞춰서 색상바꾸기  */
+  }
+  .font>h4{font-size: 40px;
+    margin-left: 0px;}
+
+  /* flat */
+  .flatDesign{
+    width: 100%;
+    margin-top: 100px;
+  }
+  .flatDesign>div{
+    margin-left: 0px;
+  }
+  .f1at1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flatTop>h1{
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  .f1at1>h3{width: 500px;}
+  .flatTop p{font-size: 20px;}
+  .flatTop p>b{font-size: 30px;}
+  .fv2{display: none;}
+  .flatVideo{margin-top: 50px;}
+  .flatVideo>div{
+    width: 300px;
+    height: 300px;
+  }
+  .flatVideo>div:hover{
+    border-radius: 50% 50% 0 0;
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+  }
+
+  /* 다크모드3 */
+  article:nth-child(3){
+    background-color: #dcdcdc00;}
+  .darkmode{
+    height: 2000px;
+    margin-bottom: -170px;
+  }
+  .darkBody{
+    width: 100%;
+    margin-left: 0px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .dark,
+  .light{
+    width: 100%;
+  }
+  .darkmode .light>img:hover,
+  .darkmode .dark>img:hover{
+    animation: darklight2 1.5s linear infinite;
+  }
+  @keyframes darklight2 {
+    0%{
+      margin-top: 100px
+    }
+    50%{
+      margin-top: 110px
+    }
+    100%{
+      margin-top: 100px
+    }
+  }
+
+  .darkmode h1{
+    display: none;
+  }
+  .darkmode h1>b{
+    color: #222;
+  }
+  .darkmode img{
+    width: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  .light::before{
+    content: 'Light';
+    width: 300px;
+    height: 1014px;
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 180px;
+    font-weight: 500;
+    color: #2222221b;
+    top: -100px;
+    left: 60px;
+  }
+  .dark::before{
+    content: 'Dark';
+    width: 300px;
+    height: 1014px;
+    position: absolute;
+    writing-mode: vertical-lr;
+    font-size: 180px;
+    font-weight: 500;
+    color: #ffffff1b;
+    top: 45%;
+    left: 580px;
+  }
+  .dbtn{
+    display: none;
+  }
+
+  .psyDesign{
+    width: 100%;
+  }
+  .psyDesign>div{
+    margin-left: 0px;
+  }
+  .p2>div{
+    margin-left: 0px;
+    background-color: #fff;
+  }
+  .p2 h1{
+    margin-right: 0;
+  }
+
+  .organic{
+    width: 100%;
+  }
+  .organic>div{
+    margin-left: 50px;
+  }
+  .oimg>img:nth-child(1){
+    top: 100px;
+  }
+  .oimg>img:nth-child(2){
+    top: 150px;
+    left: 580px;
+  }
+  .oimg>img:nth-child(3){
+    top: 460px;
+    left: 300px;
+  }
+  .oimg>img:nth-child(4){
+    top: 510px;
+    left: 580px;
+  }
+
+}
